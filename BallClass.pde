@@ -49,3 +49,61 @@ public void draw()
 
   
 }
+
+
+public class Ball
+{
+  // Instance variables
+  private int x;
+  private int y;
+  private int xD = 5;
+  private int yD = 5;
+  private int diameter;
+  
+  // Constructor(s)
+  public Ball()
+  {
+    x = 50;
+    y = 50;
+    diameter = 50;
+  }
+  
+  public Ball(int x, int y)
+  {
+    this.x = x;
+    this.y = y;
+    diameter = 50;
+  } 
+  
+  public Ball(int x, int y, int diameter)
+  {
+    this.x = x;
+    this.y = y;
+    this.diameter = diameter;
+  } 
+  // Getter methods (Accessor methods)
+  public void drawBall()
+  {
+    ellipse(x, y, diameter, diameter);
+  }
+  
+  public void update()
+  {
+    x += xD;
+    y += yD;
+  }
+  
+  public void checkEdges()
+  {
+    if(x - diameter/2 < 0 || x + diameter/2 > width)
+      xD = -1*xD;
+    if(y - diameter/2 < 0 || y + diameter/2 > height)
+      yD = -1*yD;
+  }
+  
+  // Setter methods
+ 
+ 
+ // 
+
+}

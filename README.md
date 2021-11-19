@@ -17,3 +17,8 @@ Note: The following Processing functions do not work on the web:
 + `System.out.println()`
 + `System.out.print()`
 + `push()` and `pop()`
+
+
+Samples of Student Work
+-----------------------
+[Mr. Diaz](https://mrdiazsfhs.github.io/BouncingBallClass/)
